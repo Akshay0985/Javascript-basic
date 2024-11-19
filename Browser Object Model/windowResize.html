@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<button onclick="openWindow()">Open Window</button>
+	<button onclick="resizeWindow()">Resize Window</button>
+	<script>
+ 		/* JavaScript ResizeBy And ResizeTo Window Method */
+ 		var myWindow;
+ 		function openWindow(){
+ 			myWindow = window.open("","","width=200px,height=200px,left=200px,top=200px");
+ 			myWindow.document.write("<p>This is my Window.</p>")
+ 		}
+
+ 		// function resizeWindow(){
+ 		// 	myWindow.resizeTo(400,400);
+ 		// }
+
+ 		function resizeWindow(){
+ 			myWindow.resizeBy(200,200);
+ 		}
+	</script>
+</body>
+</html>

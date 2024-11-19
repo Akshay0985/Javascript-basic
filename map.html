@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Function</title>
+</head>
+<body>
+    <script>
+        // var arr = [5,10,15,20];
+        
+        var arr = [
+            {FName:"Akshay",LName:"Umredkar"},
+            {FName:"Supriya",LName:"Khandavali"},
+            {FName:"Preethi",LName:"Khandavali"}
+            
+        ];
+
+        var mul =arr.map(test);
+        console.log(mul);
+
+        function test(x){
+            return x.FName + " : " + x.LName;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <!-- <script>
+        //a is object
+        var a={
+            fname:'Akshay',
+            Lname:'Umredkar',
+            age:25,
+            email:'ak@gmail.com',
+            favMovies:["OpenHeimer","Naruto","JJK"],
+            
+            salery: function(){
+                return 25000;
+            },
+            fullName:function(){
+                return this.fname +" "+ this.Lname; //this is directing for owner of function/object 'a'
+            },
+
+            Living:{
+                city : 'Nagpur',
+                Country:'India'
+            },
+        }
+        
+        console.log(a);
+        
+        // document.write(a.salery() + "<br>");
+        // document.write(a.favMovies[2]);
+        // console.log(a.fname);
+        
+        // document.write(a.fullName() + "<br>" );
+        // document.write(a.Living.Country);
+    </script> -->
+
+    <!-- <script>
+        var b=new Object();
+        b.firstName='Supriya';
+        b.LastName='Khandavali';
+        b.age=28;
+
+        console.log(b);
+        
+        document.write(b.LastName);
+
+    </script> -->
+
+    <!-- <script>
+        //Array Object
+        var student=[
+            {Name:'Akshay',age:25},
+            {Name:'Supriya',age:28},
+            {Name:'prithi',age:12},
+        ];
+        
+        console.log(student);
+        for(var a=0;a<student.length;a++){
+            document.write(student[a].age + "<br>");
+        }
+    </script> -->
+
+    <!-- <script>
+        //const variable with array and object
+        //once u assign a value u cant assign again a=30 
+        //so we have to do like a[1]=25;
+        
+        // const a=[10,20,30];
+        // a[1]=25;
+
+        const a={
+            name:"Akshay",
+            age:25
+        };
+        a.name="Supriya";
+        a.age=30;
+        
+        console.log(a);
+    </script> -->
+
+    <script>
+        //for in loop for printing object
+        var object = {
+            fname:'Akshay',
+            Lname:'Umredkar',
+            age:25,
+            email:'ak@gmail.com',
+            // favMovies:["OpenHeimer","Naruto","JJK"],
+        }
+        for (const key in object) {
+            console.log(object[key]);
+            document.write(key + " : " + "<br>");
+        }
+    </script>
+</body>
+</html>
+
+<!-- salery & fullName is method -->
